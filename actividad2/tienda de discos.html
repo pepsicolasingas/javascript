@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tienda de discos</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="comentarios.js"></script>
+</head>
+<body>
+    <header>
+        <ul>
+                <li>Inicio </li>
+                <li>Productos</li>
+				<li>Contacto</li>
+        </ul>
+    </header>
+    <main>
+        <h1>Productos</h1>
+        <ul>
+            <div class="producto">
+                <div class="imagen-producto"></div>
+                <img src="Metro_Boomin.png" height="300px" alt="Imagen 1">
+                <p>Heroes & Villains - Metro Boomin</p>
+                <p>Precio: $22.000</p>
+                <br>
+                <button id="boton-compra1" onclick="cambiarContenido()">Agregar al carrito</button>
+              </div>
+              
+              <div class="producto">
+                <div class="imagen-producto"></div>
+                <img src="Rosalia.png" height="300px" alt="Imagen 2">
+                <p>Motomami - Rosalía</p>
+                <p>Precio: $25.000</p>
+                <br>
+                <button id="boton-compra2" onclick="cambiarContenido()">Agregar al carrito</button>
+              </div>
+              
+              <div class="producto">
+                <div class="imagen-producto"></div>
+                <img src="mrmorale.png" height="281px" alt="Imagen 3">
+                <p>Mr. Morale & the Big Steppers - Kendrick Lamar</p>
+                <p>Precio: $25.000</p>
+                <br>
+                <button id="boton-compra3" onclick="cambiarContenido()">Agregar al carrito</button>
+              </div>
+        </ul>
+    </main>
+
+    <h1>Formulario</h1>
+<h2>¿Cómo te llamas?</h2>
+<input id="nombre" type="text" />
+<button onclick="enviar()">Enviar</button>
+
+    <h2>Caja de Comentarios</h2>
+<textarea id="comentario" placeholder="Escribe tu comentario"></textarea>
+<br>
+<button onclick="agregarComentario()">Agregar Comentario</button>
+<div id="contenedor-comentarios"></div>
+
+</body>
+
+</html>
